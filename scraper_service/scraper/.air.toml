@@ -1,0 +1,19 @@
+[build]
+  bin = "scraper"
+  cmd = "go build -o ./scraper ./cmd/scraper/main.go"
+  dir = "."
+
+[log]
+  level = "debug"
+  color = true
+
+[watcher]
+  exclude_files = [".git/**", ".gitignore"]
+  include_ext = ["go", "tpl", "tmpl", "html"]
+
+[misc]
+clean_on_exit = true
+
+[screen]
+clear_on_rebuild = true
+keep_scroll = true
